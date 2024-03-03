@@ -1,0 +1,17 @@
+## SUCCESS ##
+
+def xo(s):
+    s = s.lower()
+    x_count = 0
+    o_count = 0
+    bool = False
+    for char in s:
+        if char == 'x':
+            x_count += 1
+        elif char == 'o':
+            o_count += 1
+        else:
+            pass
+    if x_count == o_count:
+        bool = True
+    return bool
